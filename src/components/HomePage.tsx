@@ -60,6 +60,15 @@ const HomePage: React.FC<HomePageProps> = ({ onCategorySelect }) => {
           </p>
         </div>
 
+        <div className="flex justify-center mb-10">
+          <button 
+            onClick={() => onCategorySelect("sign-language")} 
+            className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-500 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+          >
+            Enter
+          </button>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => {
             const Icon = category.icon;
